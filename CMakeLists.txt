@@ -11,6 +11,7 @@ project(
 
 include_directories("include")
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(RAYLIB -lraylib -lopengl32 -lgdi32 -lwinmm)
 
 set(SOURCE_FILES
