@@ -15,8 +15,10 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(RAYLIB -lraylib -lopengl32 -lgdi32 -lwinmm)
 
 set(SOURCE_FILES
+  "src/globals.cpp"
   "src/base/actor.cpp"
   "src/base/dynamic_actor.cpp"
+  "src/utils/animation.cpp"
 )
 
 add_library("tribcore" STATIC ${SOURCE_FILES})
