@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_COMPILER clang++)
 
 project(
   "tribcore"
@@ -12,7 +11,6 @@ project(
 include_directories("include")
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-set(RAYLIB -lraylib -lopengl32 -lgdi32 -lwinmm)
 
 set(SOURCE_FILES
   "src/globals.cpp"
@@ -27,4 +25,22 @@ set(SOURCE_FILES
   "src/utils/text.cpp"
 )
 
-add_library("tribcore" STATIC ${SOURCE_FILES})
+set(HEADER_FILES
+  "include/globals.h"
+  "include/base/actor.h"
+  "include/base/dynamic_actor.h"
+  "include/base/generics.h"
+  "include/base/scene.h"
+  "include/data/data_music.h"
+  "include/data/data_sound.h"
+  "include/data/data_sprites.h"
+  "include/sys_audio.h"
+  "include/utils_animation.h"
+  "include/utils_sound.h"
+  "include/utils_music.h"
+  "include/utils_dynamic.h"
+  "include/utils_sprite.h"
+  "include/utils_text.h"
+)
+
+add_library("tribcore" STATIC ${HEADER_FILES} ${SOURCE_FILES})
