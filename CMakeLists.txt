@@ -8,7 +8,7 @@ project(
   LANGUAGES CXX
 )
 
-include_directories("include")
+include_directories("include/triblib")
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
@@ -26,21 +26,21 @@ set(SOURCE_FILES
 )
 
 set(HEADER_FILES
-  "include/globals.h"
-  "include/base/actor.h"
-  "include/base/dynamic_actor.h"
-  "include/base/generics.h"
-  "include/base/scene.h"
-  "include/data/data_music.h"
-  "include/data/data_sound.h"
-  "include/data/data_sprites.h"
-  "include/sys_audio.h"
-  "include/utils_animation.h"
-  "include/utils_sound.h"
-  "include/utils_music.h"
-  "include/utils_dynamic.h"
-  "include/utils_sprite.h"
-  "include/utils_text.h"
+  "include/triblib/globals.h"
+  "include/triblib/base/actor.h"
+  "include/triblib/base/dynamic_actor.h"
+  "include/triblib/base/generics.h"
+  "include/triblib/base/scene.h"
+  "include/triblib/data/data_music.h"
+  "include/triblib/data/data_sound.h"
+  "include/triblib/data/data_sprites.h"
+  "include/triblib/sys_audio.h"
+  "include/triblib/utils_animation.h"
+  "include/triblib/utils_sound.h"
+  "include/triblib/utils_music.h"
+  "include/triblib/utils_dynamic.h"
+  "include/triblib/utils_sprite.h"
+  "include/triblib/utils_text.h"
 )
 
 add_library("tribcore" ${HEADER_FILES} ${SOURCE_FILES})
