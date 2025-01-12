@@ -11,11 +11,20 @@ project(
 
 include_directories("include")
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(RAYLIB -lraylib -lopengl32 -lgdi32 -lwinmm)
 
 set(SOURCE_FILES
+  "src/globals.cpp"
   "src/base/actor.cpp"
   "src/base/dynamic_actor.cpp"
+  "src/system/audio.cpp"
+  "src/utils/animation.cpp"
+  "src/utils/sound.cpp"
+  "src/utils/music.cpp"
+  "src/utils/dynamic.cpp"
+  "src/utils/sprite.cpp"
+  "src/utils/text.cpp"
 )
 
 add_library("tribcore" STATIC ${SOURCE_FILES})
