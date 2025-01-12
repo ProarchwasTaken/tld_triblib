@@ -44,3 +44,5 @@ set(HEADER_FILES
 )
 
 add_library("tribcore" STATIC ${HEADER_FILES} ${SOURCE_FILES})
+target_include_directories("tribcore" PUBLIC 
+'$CMAKE_CURRENT_SOURCE_DIR/include')
