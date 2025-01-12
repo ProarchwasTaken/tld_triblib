@@ -1,5 +1,7 @@
 // globals.cpp
 #include <vector>
+#include "base/generics.h"
+#include "data/data_music.h"
 #include "data/data_sound.h"
 #include "globals.h"
 
@@ -24,5 +26,9 @@ namespace audio {
 
 namespace RNG {
   mt19937 generator(random_device{}());
+}
+
+namespace Dynamic {
+  dynamic_list queue;
 }
 

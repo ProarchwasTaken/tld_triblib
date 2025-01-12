@@ -2,6 +2,7 @@
 #pragma once
 #include <vector>
 #include <random>
+#include "base/generics.h"
 #include "data/data_sound.h"
 #include "data/data_music.h"
 
@@ -25,5 +26,9 @@ namespace audio {
 
 namespace RNG {
   extern std::mt19937 generator;
+}
+
+namespace Dynamic {
+  extern dynamic_list queue;
 }
 
