@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 set(CMAKE_CXX_STANDARD 17)
 
 project(
-  "tribcore"
+  "triblib"
   VERSION 1.0.0
   DESCRIPTION "A library of shared code for multiple projects made by me."
   LANGUAGES CXX
@@ -43,5 +43,5 @@ set(HEADER_FILES
   # "include/triblib/utils_text.h"
 )
 
-add_library("tribcore" ${HEADER_FILES} ${SOURCE_FILES})
-target_include_directories("tribcore" PUBLIC "include")
+add_library("triblib" ${HEADER_FILES} ${SOURCE_FILES})
+target_include_directories("triblib" PUBLIC "include")
