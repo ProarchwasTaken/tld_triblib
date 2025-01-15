@@ -17,12 +17,12 @@ set(SOURCE_FILES
   "src/base/actor.cpp"
   "src/base/dynamic_actor.cpp"
   "src/system/audio.cpp"
-  # "src/utils/animation.cpp"
-  # "src/utils/sound.cpp"
-  # "src/utils/music.cpp"
-  # "src/utils/dynamic.cpp"
-  # "src/utils/sprite.cpp"
-  # "src/utils/text.cpp"
+  "src/utils/animation.cpp"
+  "src/utils/sound.cpp"
+  "src/utils/music.cpp"
+  "src/utils/dynamic.cpp"
+  "src/utils/sprite.cpp"
+  "src/utils/text.cpp"
 )
 
 set(HEADER_FILES
@@ -35,12 +35,12 @@ set(HEADER_FILES
   "include/triblib/data/data_sound.h"
   "include/triblib/data/data_sprites.h"
   "include/triblib/sys_audio.h"
-  # "include/triblib/utils_animation.h"
-  # "include/triblib/utils_sound.h"
-  # "include/triblib/utils_music.h"
-  # "include/triblib/utils_dynamic.h"
-  # "include/triblib/utils_sprite.h"
-  # "include/triblib/utils_text.h"
+  "include/triblib/utils/animation.h"
+  "include/triblib/utils/sound.h"
+  "include/triblib/utils/music.h"
+  "include/triblib/utils/dynamic.h"
+  "include/triblib/utils/sprite.h"
+  "include/triblib/utils/text.h"
 )
 
 add_library("triblib" ${HEADER_FILES} ${SOURCE_FILES})

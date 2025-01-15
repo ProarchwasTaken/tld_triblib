@@ -2,8 +2,8 @@
 #include <raylib.h>
 #include <vector>
 #include "base/actor.h"
+#include "utils/animation.h"
 #include "globals.h"
-#include "utils_animation.h"
 
 using std::vector;
 

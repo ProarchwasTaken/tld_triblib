@@ -3,9 +3,9 @@
 #include <vector>
 #include <algorithm>
 #include "base/generics.h"
-#include "globals.h"
 #include "base/dynamic_actor.h"
-#include "utils_dynamic.h"
+#include "utils/dynamic.h"
+#include "globals.h"
 #include <plog/Log.h>
 
 using std::vector, std::unique_ptr;
