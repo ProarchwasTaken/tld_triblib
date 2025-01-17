@@ -1,6 +1,6 @@
 // scene.h
 #pragma once
-#include "base/generics.h"
+#include "generics.h"
 
 
 /* A scene is more like an collection of game elements. A enclosed space
